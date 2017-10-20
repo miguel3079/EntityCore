@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="miguelxamarinapp" EntityNamespace="Context" ContextNamespace="Context" Class="DataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="7cab9ad0-41b2-4668-b6b3-60775cb779cc" Provider="Devart.Data.MySql.Linq.Provider.MySqlDataProvider, Devart.Data.MySql.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="User Id=adminmiguel123;Password=admin1234@;Host=mysql8.db4free.net;Port=3307;Database=miguelxamarinapp;Persist Security Info=True" Provider="Devart.Data.MySql" />
+  <Table Name="miguelxamarinapp.Users" Member="Users">
+    <Type Name="User" ed:Guid="59d6e2ef-1c1e-4ed1-8479-afe37aed2891">
+      <Column Name="active" Member="Active" Type="System.Boolean" DbType="TINYINT(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="264f38be-cdda-4e3e-b81b-a70cd5b4aa79" />
+      <Column Name="email" Member="Email" Type="System.String" DbType="VARCHAR(250) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="250" Unicode="true" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="3295321c-ef9c-4e55-ae25-de428d99f422" />
+      <Column Name="id_user" Member="IdUser" Type="System.Int32" AutoSync="OnInsert" DbType="INT(11) NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="11" ed:ValidateRequired="true" ed:Guid="11878fe8-8c44-498f-990d-d91f02b789ed" />
+      <Column Name="name" Member="Name" Type="System.String" DbType="VARCHAR(250) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="250" Unicode="true" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="8a539a20-0529-4203-a62c-102ef0f33781" />
+      <Column Name="pass" Member="Pass" Type="System.String" DbType="VARCHAR(250) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="250" Unicode="true" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="aab5a23f-cddf-4595-87a2-2cbe824a4859" />
+      <Column Name="surname" Member="Surname" Type="System.String" DbType="VARCHAR(250) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="250" Unicode="true" ed:ValidateMaxLength="250" ed:ValidateRequired="true" ed:Guid="8cec578a-ae98-400e-93de-70896df9871e" />
+    </Type>
+  </Table>
+</Database>

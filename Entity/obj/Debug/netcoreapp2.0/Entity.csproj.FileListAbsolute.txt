@@ -1,0 +1,11 @@
+C:\Users\Consultant\Documents\Entity\Entity\bin\Debug\netcoreapp2.0\Entity.deps.json
+C:\Users\Consultant\Documents\Entity\Entity\bin\Debug\netcoreapp2.0\Entity.runtimeconfig.json
+C:\Users\Consultant\Documents\Entity\Entity\bin\Debug\netcoreapp2.0\Entity.runtimeconfig.dev.json
+C:\Users\Consultant\Documents\Entity\Entity\bin\Debug\netcoreapp2.0\Entity.dll
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.csprojResolveAssemblyReference.cache
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.AssemblyInfo.cs
+C:\Users\Consultant\Documents\Entity\Entity\bin\Debug\netcoreapp2.0\Entity.pdb
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.dll
+C:\Users\Consultant\Documents\Entity\Entity\obj\Debug\netcoreapp2.0\Entity.pdb

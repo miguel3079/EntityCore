@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Devart.Data" Version="5.0.1772" />
+    <PackageReference Include="Devart.Data.Linq" Version="4.7.1317" />
+    <PackageReference Include="Devart.Data.MySql" Version="8.9.980" />
+    <PackageReference Include="Devart.Data.MySql.Linq" Version="4.7.1317" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Entity.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Entity.lqml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Entity.lqml">
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>Entity.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
