@@ -12,7 +12,11 @@
     <PackageReference Include="Devart.Data" Version="5.0.1772" />
     <PackageReference Include="Devart.Data.Linq" Version="4.7.1317" />
     <PackageReference Include="Devart.Data.MySql" Version="8.9.980" />
+    <PackageReference Include="Devart.Data.MySql.EFCore" Version="8.9.980" />
+    <PackageReference Include="Devart.Data.MySql.EFCore.Design" Version="8.9.980" />
     <PackageReference Include="Devart.Data.MySql.Linq" Version="4.7.1317" />
+    <PackageReference Include="Devart.Data.Oracle.EFCore" Version="9.4.348" />
+    <PackageReference Include="Devart.Data.Oracle.EFCore.Design" Version="9.4.348" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
   </ItemGroup>
@@ -22,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Entity.Designer.cs">
+    <Compile Update="Model\Entity.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Entity.lqml</DependentUpon>
@@ -30,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Entity.lqml">
+    <None Update="Model\Entity.lqml">
       <Generator>DevartLinqToSqlGenerator</Generator>
       <LastGenOutput>Entity.Designer.cs</LastGenOutput>
     </None>

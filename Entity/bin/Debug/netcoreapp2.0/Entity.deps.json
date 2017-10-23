@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "27bd82bb01b786b896aee76f3404144309a7c3c7"
+    "signature": "63663be95802c6fcc50c4dc87d1146af1597cb17"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,11 @@
           "Devart.Data": "5.0.1772",
           "Devart.Data.Linq": "4.7.1317",
           "Devart.Data.MySql": "8.9.980",
+          "Devart.Data.MySql.EFCore": "8.9.980",
+          "Devart.Data.MySql.EFCore.Design": "8.9.980",
           "Devart.Data.MySql.Linq": "4.7.1317",
+          "Devart.Data.Oracle.EFCore": "9.4.348",
+          "Devart.Data.Oracle.EFCore.Design": "9.4.348",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0"
@@ -126,6 +130,53 @@
           "lib/netstandard1.3/Devart.Data.MySql.dll": {}
         }
       },
+      "Devart.Data.MySql.EFCore/8.9.980": {
+        "dependencies": {
+          "Devart.Data.MySql": "8.9.980",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.FileVersionInfo": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Devart.Data.MySql.Entity.EFCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Devart.Data.MySql.Entity.EFCore.dll": {}
+        }
+      },
+      "Devart.Data.MySql.EFCore.Design/8.9.980": {
+        "dependencies": {
+          "Devart.Data.MySql.EFCore": "8.9.980",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.2",
+          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.FileVersionInfo": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Devart.Data.MySql.Entity.EFCore.Design.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Devart.Data.MySql.Entity.EFCore.Design.dll": {}
+        }
+      },
       "Devart.Data.MySql.Linq/4.7.1317": {
         "dependencies": {
           "Devart.Data.Linq": "4.7.1317",
@@ -136,6 +187,79 @@
         },
         "compile": {
           "lib/netstandard1.3/Devart.Data.MySql.Linq.dll": {}
+        }
+      },
+      "Devart.Data.Oracle/9.4.348": {
+        "dependencies": {
+          "Devart.Data": "5.0.1772",
+          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+          "Microsoft.Win32.Registry": "4.4.0",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.FileVersionInfo": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Devart.Data.Oracle.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Devart.Data.Oracle.dll": {}
+        }
+      },
+      "Devart.Data.Oracle.EFCore/9.4.348": {
+        "dependencies": {
+          "Devart.Data.Oracle": "9.4.348",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.FileVersionInfo": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Devart.Data.Oracle.Entity.EFCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Devart.Data.Oracle.Entity.EFCore.dll": {}
+        }
+      },
+      "Devart.Data.Oracle.EFCore.Design/9.4.348": {
+        "dependencies": {
+          "Devart.Data.Oracle.EFCore": "9.4.348",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.2",
+          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.FileVersionInfo": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Devart.Data.Oracle.Entity.EFCore.Design.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Devart.Data.Oracle.Entity.EFCore.Design.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -1727,6 +1851,18 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Sqlite/2.0.0": {
@@ -4232,12 +4368,47 @@
       "path": "devart.data.mysql/8.9.980",
       "hashPath": "devart.data.mysql.8.9.980.nupkg.sha512"
     },
+    "Devart.Data.MySql.EFCore/8.9.980": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RL0R2PPKxN9MGSPxHdppzLU0iqzXgeRkKDSjK0F18VOzFt6aVLxOyRhhWiHwipxJ/7Ap6UYKlIR6knPfmwXdJA==",
+      "path": "devart.data.mysql.efcore/8.9.980",
+      "hashPath": "devart.data.mysql.efcore.8.9.980.nupkg.sha512"
+    },
+    "Devart.Data.MySql.EFCore.Design/8.9.980": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RhJxAZXkROK0lOIAUrv56gu89ndEzXLO8GIWi9Mo3wIIKM9cTUPhvvEh8+12iHAQ6t2z6BQk3a0mIHEywwASXw==",
+      "path": "devart.data.mysql.efcore.design/8.9.980",
+      "hashPath": "devart.data.mysql.efcore.design.8.9.980.nupkg.sha512"
+    },
     "Devart.Data.MySql.Linq/4.7.1317": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-l3q2QbMf5X/2m2vXrB5auecSeTdKw2E+dXyCC5GnlkvI94thmomO4LYeDfZxT9ruFyLurc8VaqiOXxs91Hlldw==",
       "path": "devart.data.mysql.linq/4.7.1317",
       "hashPath": "devart.data.mysql.linq.4.7.1317.nupkg.sha512"
+    },
+    "Devart.Data.Oracle/9.4.348": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L4e4kAnxVBxZatCoDj3bjPQ57Ha5VPRpE0oLBuO2pUhqkGNKHW65M7+eB0o1klAlV31Y2Zb3APIN3gYcZMmilQ==",
+      "path": "devart.data.oracle/9.4.348",
+      "hashPath": "devart.data.oracle.9.4.348.nupkg.sha512"
+    },
+    "Devart.Data.Oracle.EFCore/9.4.348": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zoi/zu59sUqnVwxl9YWb+QGsUWFFV9zuV2bYRVGCmk4BV8tHHjjFr96jtMdddbHvsz/CGokLU3k5lOiflXHImw==",
+      "path": "devart.data.oracle.efcore/9.4.348",
+      "hashPath": "devart.data.oracle.efcore.9.4.348.nupkg.sha512"
+    },
+    "Devart.Data.Oracle.EFCore.Design/9.4.348": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LyQIHEX1eUGc/xV0HDffUHL3TlyOdWMJsJ4tmVrc6+wcro7FIR6b8qyviodDvYT+mHpCPI2/YUm4Vr1G34Mg5Q==",
+      "path": "devart.data.oracle.efcore.design/9.4.348",
+      "hashPath": "devart.data.oracle.efcore.design.9.4.348.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -4959,6 +5130,13 @@
       "sha512": "sha512-/Ay6EZXUZuPLCKdbLW59AuwCm+hqDgIxBzDTHIx6uEIvDFfC0Bs99CRL8Lgi1NgU9NOhFDmeRgE1goViru+Zgg==",
       "path": "microsoft.entityframeworkcore.relational/2.0.0",
       "hashPath": "microsoft.entityframeworkcore.relational.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pu2Jxndzv3slY6Ch9mdqVfL3AFhH5XzM02Rrnf9h5lKoViprYx1O+nNqT3BxmGrPkYadY9OddG2b9+sUO3Xuzw==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.2",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Sqlite/2.0.0": {
       "type": "package",

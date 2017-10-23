@@ -9,5 +9,11 @@ namespace Entity.Model.DAOs
     public interface IUserDao
     {
         IEnumerable<Context.User> GetUser();
+
+        Context.User GetUserById(int id);
+
+        bool NewUser(UserDto userDto);
+
+        bool DeleteUserById(int idUser);
     }
 }

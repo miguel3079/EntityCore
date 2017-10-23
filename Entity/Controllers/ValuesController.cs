@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Entity.Model;
 using Newtonsoft.Json;
 using Entity.Model.Manager;
+using Entity.Model.DTOs;
+using System.Net;
 
 namespace Entity.Controllers
 {
@@ -14,11 +16,15 @@ namespace Entity.Controllers
     {
         UserManager _userManager;
 
+        public ValuesController()
+        {
+            _userManager = new UserManager();
+        }
+
         // GET api/values
         [HttpGet]
         public string Get()
         {
-            _userManager = new UserManager();
             return JsonConvert.SerializeObject(_userManager.GetUsers());
         }
 
@@ -26,13 +32,14 @@ namespace Entity.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return JsonConvert.SerializeObject(_userManager.GetUsersById(id));
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public bool Post([FromBody]UserDto userDto)
         {
+            return _userManager.InsertNewUser(userDto);
         }
 
         // PUT api/values/5
@@ -43,8 +50,16 @@ namespace Entity.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public bool Delete(int id)
         {
+            if (_userManager.DeleteUserById(id))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
