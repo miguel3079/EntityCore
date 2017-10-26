@@ -34,7 +34,7 @@ namespace Entity.Controllers
         {
             return JsonConvert.SerializeObject(_userManager.GetUsersById(id));
         }
-
+        
         // POST api/values
         [HttpPost]
         public bool Post([FromBody]UserDto userDto)

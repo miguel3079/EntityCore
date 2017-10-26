@@ -6,11 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Entity.Logica;
 
 namespace Entity.Model
 {
     public class UserDao : IUserDao
     {
+        private Encrypter _encrypter;
+
         public IEnumerable<Context.User> GetUser()
         {
              using (var context = new Context.DataContext())
@@ -65,12 +68,14 @@ namespace Entity.Model
 
         private Context.User DtoToContextUser(UserDto userDto)
         {
+            _encrypter = new Encrypter();
+
             return new Context.User
             {
                 Name = userDto.Name,
                 Surname = userDto.Surname,
                 Email = userDto.Email,
-                Pass = userDto.Password,
+                Pass = _encrypter.EncripterPass(userDto.Password),
                 Active = userDto.Status
             };
         }
