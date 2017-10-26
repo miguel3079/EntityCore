@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Entity.Model;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Entity.Model.Manager;
 using Entity.Model.DTOs;
-using System.Net;
+using System.Collections.Generic;
 
 namespace Entity.Controllers
 {
@@ -61,5 +56,6 @@ namespace Entity.Controllers
                 return false;
             }
         }
+
     }
 }
